@@ -1,10 +1,10 @@
 # webmethods Containers for API Management - Samples by Software AG Government Solutions
-A repository containing intructions and examples of how to deploy webMethods API Management containers into an environment using [docker-compose](https://docs.docker.com/compose/).
+A repository containing instructions and examples of how to deploy webMethods API Management containers into an environment using [docker-compose](https://docs.docker.com/compose/).
 
 ## Prerequisites
 If you are using Docker Desktop for Mac, resources should be set for 12 CPU and 12 GB RAM.
 
-If you will be running these containers on a server (as opposed to a workstation), less resources are typically required for operation.
+If you will be running these containers on a server (as opposed to a workstation), less resources are typically required for operation.  This has been tested successfully on an AWS m5a.2xlarge (8 CPU, 32GB Memory).
 
 The API Portal and the API Gateway from Software AG require license key files to function.  Please have these files handy, the instructions below will guide you through where you will need to place these files during setup.
 
@@ -18,6 +18,10 @@ Software AG Government Solutions hosts the API Management containers on the GitH
 
 For more details on the GitHub Container registry, please refer to the documentation here:
 [Working with the GitHub Container registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+
+__Important!__
+
+The API Portal uses Elasticsearch.  If you are going to deploy to a Linux system, the maximum map count checks that the kernel allows a process to have at least 262,144 memory-mapped areas.  Please ensure that the host that docker is running on sets the vm.max_map_count to 262144. 
 
 ## Getting Started
 For your convenience, Software AG Government Solutions has created Docker Compose scripts to accelerate deployment of the containers within your environment.  These scripts are available in the [webmethods Container Deployments](https://github.com/saggs-cloudops/webmethods-container-deployments) GitHub respository.
