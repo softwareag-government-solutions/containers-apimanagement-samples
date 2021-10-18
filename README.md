@@ -109,4 +109,4 @@ http://localhost:18101/
 
 username: system
 
-password: somethingnew
+password: manager
