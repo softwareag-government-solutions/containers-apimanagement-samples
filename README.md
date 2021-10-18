@@ -59,6 +59,15 @@ __Stopping the containers:__
 
 `docker-compose --env-file ./configs/docker.env${SAG_RELEASE} -f apigateway-with-apiportal/docker-compose.yml down`
 
+__Stopping & removing volumes for the containers:__
+
+`docker-compose --env-file ./configs/docker.env${SAG_RELEASE} -f apigateway-with-apiportal/docker-compose.yml down -v`
+
+__Refreshing the containers:__
+
+`docker-compose --env-file ./configs/docker.env${SAG_RELEASE} -f apigateway-with-apiportal/docker-compose.yml pull`
+
+
 __These are the containers that will be started:__
 
 _apigateway-standalone-apigateway-1_
