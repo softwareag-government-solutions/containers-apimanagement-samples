@@ -29,7 +29,7 @@ For your convenience, Software AG Government Solutions has created Docker Compos
 
 __Start by cloning the following repository to retrieve the docker scripts and configuration:__
 
-`git clone git@github.com:saggs-cloudops/webmethods-container-deployments.git`
+`git clone https://github.com/saggs-cloudops/webmethods-container-deployments.git`
 
 This project contains several docker-compose scripts to pull & deploy the API Management components in a wide variety of configurations: from a single node “standalone” environment to a multi-node arrangement suitable for exploring high-availability scenarios.
 
