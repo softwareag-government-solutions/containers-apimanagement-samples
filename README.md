@@ -24,12 +24,12 @@ __Important!__
 The API Portal uses Elasticsearch.  If you are going to deploy to a Linux system, the maximum map count checks that the kernel allows a process to have at least 262,144 memory-mapped areas.  Please ensure that the host that docker is running on sets the vm.max_map_count to 262144. 
 
 ## Getting Started
-For your convenience, Software AG Government Solutions has created Docker Compose scripts to accelerate deployment of the containers within your environment.  These scripts are available in the [webmethods Container Deployments](https://github.com/saggs-cloudops/webmethods-container-deployments) GitHub respository.
+For your convenience, Software AG Government Solutions has created Docker Compose scripts to accelerate deployment of the containers within your environment.  These scripts are available in the [webmethods Container Deployments](https://github.com/softwareag-government-solutions/webmethods-container-deployments) GitHub respository.
 
 
 __Start by cloning the following repository to retrieve the docker scripts and configuration:__
 
-`git clone https://github.com/saggs-cloudops/webmethods-container-deployments.git`
+`git clone https://github.com/softwareag-government-solutions/webmethods-container-deployments.git`
 
 This project contains several docker-compose scripts to pull & deploy the API Management components in a wide variety of configurations: from a single node “standalone” environment to a multi-node arrangement suitable for exploring high-availability scenarios.
 
